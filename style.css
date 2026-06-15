@@ -11,8 +11,6 @@
     font-size: 40px;
     font-style: normal;
     color: #AF2424;
-    hyphens: auto;
-
 }
 
 body {
@@ -23,13 +21,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    hyphens: auto;
+    text-align: left;
 }
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
     color: #AF2424;
-    hyphens: auto;
+    text-align: center;
     
 }
 
@@ -37,7 +35,7 @@ h2 {
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 15px;
-    hyphens: auto;
+    text-align: center;
 }
 
 .site-header {
@@ -66,13 +64,13 @@ h2 {
 /* --- Layout Principal --- */
 .main-layout {
     display: grid;
-    grid-template-columns: 15% 1 gap 15%; /* Divide em 15% | Centro | 15% */
+    grid-template-columns: 15% 1fr 15%;
     flex: 1;
 }
 
+
 /* Área Central */
 .content-center {
-    hyphens: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -93,7 +91,7 @@ h2 {
     background-color: #AF2424; 
     padding: 8px 16px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     transition: background 0.2s ease;
 }
@@ -107,17 +105,27 @@ h2 {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
+    text-align: left;
+
 }
 
 /* --- Rodapé --- */
 .site-footer {
-    text-align: center;
+    text-align: left;
     padding: 15px;
     color: #FFFFFF;
     border-top: 4px solid #AF2424;
     background-color: #0d0f12;
-    font-size: 14px;
 }
+
+/* Garante o tamanho exato exigido pelo professor para qualquer texto no rodapé */
+.site-footer, 
+.site-footer p, 
+.site-footer span, 
+.site-footer div {
+    font-size: 13px;
+}
+
 
 /* Estrutura Flexbox para alinhar os cartões lado a lado */
 .container-cards {
@@ -134,14 +142,12 @@ h2 {
     border: 1px solid #E5E7EB; 
     border-radius: 12px; 
     padding: 24px;
-    hyphens: auto;
-    box-shadow: 0 4px 6px -1px black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
 /* Estilo para as imagens/ícones de dentro dos cards */
 .card-icone {
-    hyphens: auto;
     width: 64px; 
     height: 64px;
     margin-bottom: 16px;
@@ -149,14 +155,14 @@ h2 {
 }
 
 .card h2 {
-    hyphens: auto;
+    text-align: center;
     color: #AF2424; 
     font-size: 1.25rem;
     margin-bottom: 12px;
 }
 
 .card p {
-    hyphens: auto;
+    text-align: left;
     color: #555C66;
     font-size: 0.95rem;
     line-height: 1.5;
