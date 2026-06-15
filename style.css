@@ -1,0 +1,260 @@
+/* Reset básico para limpar margens padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rammetto-one-regular {
+    font-family: "Rammetto One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    color: #AF2424;
+    hyphens: auto;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0D0F12;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    hyphens: auto;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #AF2424;
+    hyphens: auto;
+    
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 15px;
+    hyphens: auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 20px;
+    background-color: #CFD4DA;
+    border-bottom: 4px solid #AF2424;
+    width: 100%;
+}
+
+.header-center-container {
+    display: flex;
+    align-items: center;   
+    gap: 30px;               
+}
+
+/* Configuração da Imagem da Logo */
+.logo-img {
+    height: 75px;           
+    width: auto;         
+    object-fit: contain;
+}
+
+/* --- Layout Principal --- */
+.main-layout {
+    display: grid;
+    grid-template-columns: 15% 1 gap 15%; /* Divide em 15% | Centro | 15% */
+    flex: 1;
+}
+
+/* Área Central */
+.content-center {
+    hyphens: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #F3F4F6;
+}
+
+/* --- Menu de Navegação --- */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #AF2424; 
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.nav-item:hover {
+    background-color: #691414;
+}
+
+/* Área de Texto */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- Rodapé --- */
+.site-footer {
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    border-top: 4px solid #AF2424;
+    background-color: #0d0f12;
+    font-size: 14px;
+}
+
+/* Estrutura Flexbox para alinhar os cartões lado a lado */
+.container-cards {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+/* Estilização individual de cada Card */
+.card {
+    flex: 1; 
+    background-color: #FFFFFF; 
+    border: 1px solid #E5E7EB; 
+    border-radius: 12px; 
+    padding: 24px;
+    hyphens: auto;
+    box-shadow: 0 4px 6px -1px black;
+    text-align: center;
+}
+
+/* Estilo para as imagens/ícones de dentro dos cards */
+.card-icone {
+    hyphens: auto;
+    width: 64px; 
+    height: 64px;
+    margin-bottom: 16px;
+    object-fit: contain;
+}
+
+.card h2 {
+    hyphens: auto;
+    color: #AF2424; 
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.card p {
+    hyphens: auto;
+    color: #555C66;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.imagem-destaque-container {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-destaque {
+    height: auto;
+    max-width: 500px;
+    border-radius: 12px;
+}
+.citacao-mestre {
+    position: relative;         
+    background-color: #F3F4F6;  
+    border-left: 5px solid #AF2424;
+    margin: 40px auto;
+    padding: 30px 40px;
+    max-width: 700px;            
+    border-radius: 0 12px 12px 0;
+}
+/* aspa grandona */
+.citacao-mestre::before {
+    content: "“";            
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 7rem;            
+    color: rgba(175, 36, 36, 0.15); 
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+/* Estilo do texto da frase */
+.citacao-mestre p {
+    font-style: italic;       
+    font-size: 1.15rem;
+    color: #0D0F12;          
+    line-height: 1.6;
+    margin-bottom: 12px;
+    position: relative;       
+    z-index: 1;
+}
+
+/* Estilo do autor da frase */
+.citacao-mestre cite {
+    display: block;
+    font-size: 0.95rem;
+    color: #555C66;           
+    font-weight: bold;
+    text-transform: uppercase;  
+    letter-spacing: 1px;        
+}
+/* Container da seção */
+.secao-comemorar {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left; 
+}
+
+/* Título da seção */
+.secao-comemorar h2 {
+    color: #AF2424; 
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo geral da Lista */
+.lista-topicos {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de cada item da lista (li) */
+.lista-topicos li {
+    position: relative;
+    padding-left: 25px; 
+    margin-bottom: 16px; 
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #0D0F12; 
+}
+/* marcador personalizado */
+.lista-topicos li::before {
+    content: "—"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #AF2424;
+    font-weight: bold;
+}
+
+/* Destaca o título do tópico  dentro da tag <strong> */
+.lista-topicos li strong {
+    color: #0D0F12;
+    font-weight: 700;
+}
