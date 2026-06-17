@@ -71,10 +71,12 @@ h2 {
 
 /* Área Central */
 .content-center {
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     padding: 20px;
     background-color: #F3F4F6;
+    width: 100%;
 }
 
 /* --- Menu de Navegação --- */
